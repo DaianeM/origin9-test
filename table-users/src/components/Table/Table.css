@@ -1,0 +1,72 @@
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #DDD;
+  border-right: 1px solid #DDD;
+}
+
+thead {
+  background-color: #B1B1B1;
+  color: #FFFFFF;
+}
+
+tbody {
+  background-color: #FFFFFF;
+  color: #303733;
+}
+
+
+@media screen and (max-width: 600px){
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-top: 3px solid #DDD;
+    border-bottom: 3px solid #DDD;
+    display: block;
+    margin-bottom: 3em;
+  }
+
+  table td {
+    border-bottom: 1px solid #DDD;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
