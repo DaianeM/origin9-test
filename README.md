@@ -2,5 +2,5 @@
 
 ## Executando o projeto
 
-- Para executar a aplicação backend : instalar node_modules e yarn dev;
-- Para executar a aplicação frontend : yarn start;
+- Para executar a aplicação backend : yarn dev;
+- Para executar a aplicação frontend : instalar node_modules e yarn start;
